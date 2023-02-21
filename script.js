@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
         switch(choosen){
             case "rock":
-                return "assets/rock.svg";
+                return "rock.svg";
             case "paper":
-                return "assets/paper.svg";
+                return "paper.svg";
             case "scissors":
-                return "assets/scissors.svg";
+                return "scissors.svg";
             default:
                 throw "Seçilen: " + choosen;
         }
