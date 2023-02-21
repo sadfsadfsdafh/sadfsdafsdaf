@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
             resultText.innerHTML = 
                results == 0 ? "Kaybettin!" :
-               results == 1 ? "Kazandın!" : "Galibiyet!"
+               results == 1 ? "Kazandın!" : "Mağlubiyet!"
             
             resultText.style.color =
                 results == 0 ? resultText.style.color :
