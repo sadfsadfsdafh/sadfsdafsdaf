@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "shantell";
+    src: url("assets/shantell.ttf");
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background: black;
+    transition: background 0.5s;
+}
+
+body *{ font-family: "shantell"; box-sizing: border-box; }
+
+.scene{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 0.5s;
+}
+
+.link{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: rgb(14, 159, 255);
+}
+
+.button{
+    font-size: 3vw;
+    padding: 20px;
+    width: 18vw;
+    height: 12vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1vw;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background: black;
+    border: white solid 5px;
+    color:white;
+}
+
+/* Result Scene */
+.result {
+    opacity: 0;
+    display: none;
+}
+
+#playagain{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#result-text{
+    text-align: center;
+    display: block;
+    font-size: 3vw;
+    margin: 0px;
+    color: rgb(126, 126, 126);
+}
+
+.container .footer {
+    margin-top: 150px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+  .container .footer .footer-a {
+    color: #fff;
+    text-decoration: none;
+  
+    transition: all 0.2s ease-in-out 0.1s;
+  }
+
+  .container .footer .footer-a:hover {
+    color: #fff;
+  }
+
+.result > .title{
+    font-size: 8vw;
+    text-align: center;
+    margin: 0px;
+    color: black;
+    transition: color 0.15s;
+}
+
+.result > .link{
+    font-size: 1.4em;
+    text-align: center;
+    display: block;
+}
+
+@keyframes handanim{
+    30%{
+        transform: translate(-100%) rotate(-20deg);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+.player{
+    position: absolute;
+    top: 50%;
+}
+
+.player .name{
+    font-size: 1.6vw;
+    display: block;
+}
+
+.hand{
+    display: block;
+}
+
+.hand > img {
+    height: 12vw;
+}
+
+.player.left{
+    left: 10%;
+}
+
+.player.left .hand{
+    rotate: 90deg;
+}
+
+.player.left .name{
+    text-align: left;
+}
+
+.player.right{
+    right: 10%;
+}
+
+.player.right .name{
+    text-align: right;
+}
+
+.player.right .hand{
+    transform: scaleY(-100%) rotate(-90deg);
+}
+
+/* Choose Scene */
+.choose{
+    opacity: 1;
+    display: block;
+}
+
+.choose > .title{
+    font-size: 16vw;
+    text-align: center;
+    margin: 0px;
+    color: white;
+    transition: color 0.15s;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons > button:hover img {
+    filter: invert(100%);
+}
+
+.buttons > button > img {
+    height: 4vw;
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .buttons {flex-direction: column;}
+    .buttons > button{margin-bottom: 1vw;height: 24vw;width: 60vw;font-size: 5vw;}
+    .buttons > button img{height: 10vw;}
+    .player {scale: 2;}
+    .player.left {left: 15%}
+    .player.right {right: 15%;}
+    .player .name {font-size: 3vw;}
+    #result-text{font-size: 10vw;}
+}

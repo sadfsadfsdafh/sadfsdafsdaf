@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş, Kağıt & Makas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+</head>
+<body>
+    <div class="scene choose">
+        <h1 class="title">Seç!</h1>
+        <div class="buttons">
+            <button class="button" pass="rock"><img src="assets/rock.svg" alt="Rock"> Taş</button>
+            <button class="button" pass="paper"><img src="assets/paper.svg" alt="Paper"> Kağıt</button>
+            <button class="button" pass="scissors"><img src="assets/scissors.svg" alt="Scissors"> Makas</button>
+        </div>
+
+    </div>
+    <div class="scene result">
+
+        <h1 class="title">Taş, Kağıt, Makas!</h1>
+        <h3 id="result-text">Bilgisayar Düşünüyor...</h3>
+        
+        <div class="player left">
+            <span class="hand"><img src="assets/rock.svg" alt=""></span>
+            <span class="name">Sen</span>
+        </div>
+        
+        <div class="player right">
+            <span class="hand"><img src="assets/rock.svg" alt=""></span>
+            <span class="name">Bilgisayar</span>
+        </div>
+
+        <a class="link" id="playagain" href="">Yeniden Oyna</a>
+
+
+    </div>
+</body>
+</html>
